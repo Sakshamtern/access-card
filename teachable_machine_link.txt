@@ -1,0 +1,2 @@
+https://teachablemachine.withgoogle.com/models/g1wkIvNgc/model.json - image
+https://teachablemachine.withgoogle.com/models/zuwyjLqKT/model.json - sound

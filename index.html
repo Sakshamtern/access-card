@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Access card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+    <div class="container">
+        <center>
+          <h3 class="btn btn-warning heading">Access card web app</h3>
+          <h4>Click reload when you have pressed both the identify buttons so that you can identify face and sound again</h4>
+          <br>
+          <input type="text" id="person_name_input" class="form-control" placeholder=" Write the person's name">
+          <br>
+          <button onclick="enter_person_name()" class="btn btn-info">Enter name</button> 
+          <br><br>
+          <label>Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+        <br><br>
+        <button onclick="check_face()" class="btn btn-success">Identify face</button>
+        <br><br>
+        <button onclick="check_sound()" class="btn btn-success">Identify sound</button>
+        <br><br>
+  
+          <p style="font-size:27px ;">Name of person by their face : <span id="result_person_name_face"></span></p>
+          <p style="font-size:27px ;">Name of person by their sound : <span id="result_person_name_sound"></span></p>
+          <p style="font-size:27px ;">Accuracy of their face : <span id="result_person_accuracy_face"></span></p>
+          <p style="font-size:27px ;">Accuracy of their sound : <span id="result_person_accuracy_sound"></span></p>
+
+          <p style="font-size: 54;" id="access_confirmed" class="btn btn-success">Access confirmed</p>
+          
+          </center>
+        </div>
+        <script src="main.js"></script>
+  
+          </body>
+          </html>
